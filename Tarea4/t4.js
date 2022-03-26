@@ -1,4 +1,4 @@
-
+document.write('<h1 style="color:red">Ejercicio 2</h1>');
 function numero(a,b){
 
     if(b>a){
@@ -7,7 +7,6 @@ function numero(a,b){
     else{
         menor = b;
     }
-    
     if(a>b){
         mayor = a;
     }
@@ -15,6 +14,9 @@ function numero(a,b){
         mayor = b;
     }
     mayor=mayor+1;
+    if(a>b){
+        alert("No se ha podido procesar su peticion, ponga primero un numero mayor. Igual de lo contrario lo ordene para usted. :)")
+    }
 for(j=menor; j<mayor; j++){
     
 	document.write("<h2>Imprimiendo tabla del "+ menor +"</h2>");
@@ -25,9 +27,6 @@ for(j=menor; j<mayor; j++){
 		document.write("</li>");
 	}
     menor=menor+1;
-   
 }
-    
 }
-
-numero(4,2);
+numero(1,10);
